@@ -1,0 +1,3 @@
+create migration: npx knex migrate:make name-of-migration
+run migration: npx knex migrate:latest
+undo migration: npx knex migrate:rollback
