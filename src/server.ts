@@ -6,7 +6,7 @@ import { TransactionsRoutes } from './routes/transactions.routes';
 
 const app = fastify();
 
-app.register(TransactionsRoutes);
+app.register(TransactionsRoutes, { prefix: 'transactions' });
 
 app.listen({ port: env.PORT }).then(() => {
   console.log(`The server is running on http://localhost:${env.PORT}`);
